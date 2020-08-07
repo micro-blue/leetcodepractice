@@ -1,5 +1,7 @@
 package hard.merge_k_sorted_lists;
 
+import common.node.ListNode;
+
 import java.util.*;
 
 /**

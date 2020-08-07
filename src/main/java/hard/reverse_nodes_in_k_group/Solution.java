@@ -1,5 +1,7 @@
 package hard.reverse_nodes_in_k_group;
 
+import common.node.ListNode;
+
 import java.util.Queue;
 import java.util.Stack;
 
