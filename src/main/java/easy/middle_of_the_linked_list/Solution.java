@@ -1,5 +1,7 @@
 package easy.middle_of_the_linked_list;
 
+import common.node.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

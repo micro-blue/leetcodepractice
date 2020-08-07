@@ -1,5 +1,7 @@
 package easy.intersection_of_two_linked_lists;
 
+import common.node.ListNode;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
