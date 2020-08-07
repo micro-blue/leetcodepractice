@@ -22,7 +22,7 @@ public class Solution {
         };
         int[] arr=new int[k];
         for (int i = 0; i < k; i++) {
-            arr[i]=queue.poll().getKey();
+            arr[i]=queue.poll().getKey();//111
         }
         return arr;
     }
