@@ -2,9 +2,11 @@ package medium.top_k_frequent_elements;
 
 import java.util.*;
 
+
 /**
  * top k类问题，使用有限容量的优先队列
  */
+
 public class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         if (nums.length==0)
@@ -25,21 +27,30 @@ public class Solution {
         for (Map.Entry<Integer,Integer> e:map.entrySet()) {
             queue.add(e);
         }*/
-        PriorityQueue<Map.Entry<Integer,Integer>>queue= new PriorityQueue<>(Comparator.comparingInt(Map.Entry::getValue));
+        /*PriorityQueue<Map.Entry<Integer,Integer>>queue= new PriorityQueue<>(Comparator.comparingInt(Map.Entry::getValue));
         for (Map.Entry<Integer,Integer> e:map.entrySet()) {
             queue.add(e);
             if(queue.size()>k)
                 queue.poll();
-        }
-
+        }*/
+/*
         int[] arr=new int[k];
-        /* 最大堆则顺序赋值
+         最大堆则顺序赋值
         for (int i = 0; i < k; i++) {
             arr[i]=queue.poll().getKey();
         }*/
         //如果使用最小堆，那么出队后是从小到大排列，因此应反转，从尾部向前赋值
-        for (int i = k-1; i >=0; i--) {
-            arr[i]=queue.poll().getKey();
+
+       /* for (int i = k-1; i >=0; i--) {
+            arr[i] = queue.poll().getKey();
+        }*/
+        PriorityQueue<Map.Entry<Integer,Integer>>queue= new PriorityQueue<>((e1, e2) -> e2.getValue() - e1.getValue());
+        for (Map.Entry<Integer,Integer> e:map.entrySet()) {
+            queue.add(e);
+        };
+        int[] arr=new int[k];
+        for (int i = 0; i < k; i++) {
+            arr[i]=queue.poll().getKey();//111
         }
         return arr;
     }
