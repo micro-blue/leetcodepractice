@@ -2,6 +2,9 @@ package medium.top_k_frequent_elements;
 
 import java.util.*;
 
+/**
+ * top k类问题，使用有限容量的优先队列
+ */
 public class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         if (nums.length==0)
