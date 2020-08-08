@@ -1,5 +1,6 @@
 package easy.sort;
 
+
 public class QuickSort {
 
 

@@ -1,4 +1,4 @@
-package tree.medium.DFS;
+package tree.medium.BFS.binary_tree_level_order_traversal;
 
 import common.node.TreeNode;
 

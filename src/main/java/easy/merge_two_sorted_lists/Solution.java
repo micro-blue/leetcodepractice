@@ -1,5 +1,7 @@
 package easy.merge_two_sorted_lists;
 
+import common.node.ListNode;
+
 import java.util.*;
 
 public class Solution {
