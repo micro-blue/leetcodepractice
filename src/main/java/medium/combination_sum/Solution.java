@@ -1,7 +1,7 @@
 package medium.combination_sum;
 
 import java.util.*;
-
+//击败用户百分五！！！
 public class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result=new ArrayList<>();
@@ -53,7 +53,8 @@ public class Solution {
                 newResult.add(e);
             }
         }
-        return newResult.size()>0?newResult:result;
+        return newResult.size()>0?newResult:result;//这个可以再优化，不需要两个result
+
     }
 
     public static void main(String[] args) {

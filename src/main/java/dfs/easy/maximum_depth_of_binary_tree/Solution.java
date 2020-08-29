@@ -3,7 +3,13 @@ package dfs.easy.maximum_depth_of_binary_tree;
 import common.node.TreeNode;
 
 public class Solution {
-
+    /**
+     最简洁的写法
+     public int maxDepth(TreeNode root) {
+        return root==null?0:1+Math.max(maxDepth(root.left),maxDepth(root.right));
+     }
+     */
+    //改写发比较冗余
     public int maxDepth(TreeNode root) {
         if(root==null)
             return 0;
